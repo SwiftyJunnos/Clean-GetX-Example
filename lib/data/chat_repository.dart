@@ -13,7 +13,7 @@ class LiveChatRepository implements ChatRepository {
   Future<String> fetchAPIKey() async {
     try {
       // Read the API key from a file at the project root
-      final file = File('api_key');
+      final file = File('API_SECRET');
 
       // Check if the file exists
       if (await file.exists()) {
@@ -22,7 +22,7 @@ class LiveChatRepository implements ChatRepository {
         return apiKey.trim();
       } else {
         throw Exception(
-          'API key file not found. Please create a file named "api_key" in the project root directory.',
+          'API key file not found. Please create a file named "API_SECRET" in the project root directory.',
         );
       }
     } catch (e) {
