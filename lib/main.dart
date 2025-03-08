@@ -1,8 +1,7 @@
 import 'package:flutter/cupertino.dart';
-
 import 'package:get/get.dart';
 
-import 'presentation/counter_page.dart';
+import 'presentation/chat_page.dart';
 
 void main() {
   runApp(const MainApp());
@@ -13,6 +12,6 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetCupertinoApp(home: const CounterPage());
+    return GetCupertinoApp(home: const ChatPage());
   }
 }
